@@ -12,6 +12,7 @@
 html{
     font-family: 'Open Sans', sans-serif;
     color: var(--mainColor);
+    text-transform: uppercase;
 }
 
 li{
@@ -45,7 +46,6 @@ nav{
 }
 
 nav .menu{
-    text-transform: uppercase;
     width: 100%;
     display: flex;
     flex: row nowrap;
@@ -59,7 +59,7 @@ nav .menu{
 }
 
 .menu .menuItem{
-    margin: 0 0 0 0.6em;
+    margin: 0 0 0 2em;
 }
 
 .menu .menuItem:hover{
@@ -71,6 +71,10 @@ nav .menu{
     min-height: 100vh;
 
     background-image: url(../assets/imgs/bg.jpg);
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -82,7 +86,7 @@ nav .menu{
     align-content: initial;
 }
 .soul .logoSoul{
-    width:90%;
+    width: 90%;
     max-width: 760px;
     min-height: 50px;
 }
