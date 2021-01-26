@@ -13,6 +13,7 @@ html{
     font-family: 'Open Sans', sans-serif;
     color: var(--mainColor);
     text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 li{
@@ -55,7 +56,6 @@ nav .menu{
 
     font-weight: 600;
     font-size: 0.95em;
-    letter-spacing: 2px;
 }
 
 .menu .menuItem{
@@ -72,8 +72,6 @@ nav .menu{
 
     background-image: url(../assets/imgs/bg.jpg);
     /* background-position: center; */
-    /* background-repeat: no-repeat; */
-    /* background-size: cover; */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -89,4 +87,33 @@ nav .menu{
     width: 90%;
     max-width: 760px;
     min-height: 50px;
+}
+
+.columns{
+    width: 100%;
+    padding: 16vh 0;
+}
+.columns .items{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: initial;
+}
+
+.items .item{
+    width: calc( 100% / 3 - 2em );
+    text-align: center;
+}
+.items .item img{
+    width: 100%;
+    min-height: 200px;
+    margin: 0 0 2em 0;
+}
+.items .item .itemTittle{
+    width: 100%;
+    font-weight: 700; 
+    font-size: 0.9em;
 }
