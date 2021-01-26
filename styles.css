@@ -21,9 +21,11 @@ a{
     text-decoration: none;
     color: inherit;
 }
+header{
+    padding: 1.2em 0;
+}
 .centered {
-    width: 90%;
-
+    width: 80%;
     display: flex;
     flex: row nowrap;
     justify-content: space-between;
@@ -31,12 +33,10 @@ a{
     align-content: initial;
 
     margin: auto;
-    padding: 5.5em 0;
 }
 
 .logo{
     max-width: 200px;
-    padding-left: 2.5em;
 }
 
 
@@ -56,13 +56,33 @@ nav .menu{
     font-weight: 600;
     font-size: 0.95em;
     letter-spacing: 2px;
-    padding-right: 7.5em;
 }
 
 .menu .menuItem{
-    padding: 0 0.8em;
+    margin: 0 0 0 0.6em;
 }
 
 .menu .menuItem:hover{
     color: var(--mainHover);
+}
+
+.soul{
+    width:100%;
+    min-height: 100vh;
+
+    background-image: url(../assets/imgs/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: initial;
+}
+.soul .logoSoul{
+    width:90%;
+    max-width: 760px;
+    min-height: 50px;
 }
