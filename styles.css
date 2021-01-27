@@ -1,6 +1,7 @@
 :root{
     --mainColor : rgb(51,51,51);
-    --mainHover : rgb(195,195,195)
+    --mainHover : rgb(195,195,195);
+    --menuBg : #1D1D1D;
 ;}
 
 
@@ -24,7 +25,7 @@ a{
     color: inherit;
 }
 header{
-    padding: 1.2em 0;
+    padding: 2em 0;
 }
 .centered {
     width: 80%;
@@ -33,17 +34,16 @@ header{
     justify-content: space-between;
     align-items: center;
     align-content: initial;
-
     margin: auto;
 }
 
 .logo{
-    max-width: 200px;
+    max-width: 150px;
 }
 
 
 nav{
-    width: calc(100%-200px);
+    width: calc(100%-150px);
 }
 
 nav .menu{
@@ -66,6 +66,26 @@ nav .menu{
     color: var(--mainHover);
 }
 
+.menuItem .SFsubmenu{
+    display: none;
+    position: absolute;
+    /* vertical-align: baseline; */
+    padding: 1em 0;
+    text-align: left;
+    font-size: 0.9em;
+}
+.SFsubmenu .SFsubmenuItem{
+    margin: 0.5em 1em;
+}
+
+.menuItem.SF:hover .SFsubmenu{
+    display: block;
+    background-color: var(--menuBg);
+    color: white;
+}
+.SFsubmenu .SFsubmenuItem a:hover{
+    color: var(--mainHover);
+}
 .soul{
     width:100%;
     min-height: 100vh;
