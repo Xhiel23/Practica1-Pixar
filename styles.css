@@ -59,7 +59,11 @@ nav .menu{
     font-weight: 600;
     font-size: 0.95em;
 }
-
+.fas {
+    color: var(--mainColor);
+    font-size: 1.5em;
+    display: none;
+}
 .menu .menuItem{
     margin: 0 0 0 1.6em;
 }
@@ -104,10 +108,10 @@ nav .menu{
     align-items: center;
     align-content: initial;
 }
-.soul .logoSoul{
+.soul .logoSoul img{
     width: 90%;
-    max-width: 760px;
-    min-height: 50px;
+    max-width: 47.5em;
+    min-height: 3em;
 }
 
 .columns{
@@ -144,15 +148,14 @@ footer{
     text-align: center;
 }
 
-footer .socialMedia{
-    margin: auto;
+footer .socialMedia{ 
     min-height: 13em;
     display: flex;
     flex: row nowrap;
     justify-content: center;
     align-items: center;
     align-content: initial;
-    padding: 2em 1.5em;
+    padding: 1em 1.5em;
 }
 
 footer .icon{
@@ -188,6 +191,36 @@ footer .copyright{
 }
 
 
+@media screen and (max-width:1200px){
+    body{
+        font-size: 90%;
+    }
+    header .menu{
+        display: none;
+    }
+    .fa-bars{
+        display: flex;
+        font-size: 2em;
+    }
+    .soul{
+        background-attachment: scroll;
+    }
+    .columns .items{
+        flex-direction: column;
+    }
+    
+    .columns .items .item{
+        width: 100%;
+    }
+
+    .columns .items .itemTittle{
+        padding-bottom: 5%;
+    }
+    .footer{
+        padding-top: 5%;
+    }
+}
+
 @media screen and (prefers-color-scheme:dark){
     
     header{
@@ -199,7 +232,9 @@ footer .copyright{
     .menu {
         color: var(--white);
     }
-    
+    .fa-bars{
+        color: var(--white);
+    }
     .menu .menuItem:hover{
         color: var(--mainHover);
     }
