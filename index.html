@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="/assets/imgs/favicon.ico" type="image/x-icon">
+    <script src="index.js" defer></script>
     <title>Pixar Animation Studios</title>
 </head>
 <body>
@@ -15,59 +16,59 @@
             <div class="logo">
                 <h1><a href="#"><img src="assets/imgs/logo.png" alt="Pixar logo"></a></h1>
             </div>
-            <nav>
+            <nav class="navbar">
                 <ul class="menu">
                     <li class="menuItem"><a href="#">feature films</a></li>
                     <li class="menuItem SF">
                         <a href="#">short films</a>
                         <ul class="SFsubmenu">
-                            <li class="SFsubmenuItem"><a href="#">theatrical shorts</a></li>
-                            <li class="SFsubmenuItem"><a href="#">disney+</a></li>
-                            <li class="SFsubmenuItem"><a href="#">sparkshorts</a></li>
-                            <li class="SFsubmenuItem"><a href="#">cars toons</a></li>
-                            <li class="SFsubmenuItem"><a href="#">toy story toons</a></li>
-                            <li class="SFsubmenuItem"><a href="#">home entertaintment</a></li>
+                            <li class="SFsubmenuItem"><a href="#" title="theatrical shorts">theatrical shorts</a></li>
+                            <li class="SFsubmenuItem"><a href="#" title="disney+">disney+</a></li>
+                            <li class="SFsubmenuItem"><a href="#" title="sparkshorts">sparkshorts</a></li>
+                            <li class="SFsubmenuItem"><a href="#" title="cars toons">cars toons</a></li>
+                            <li class="SFsubmenuItem"><a href="#" title="toy story toons">toy story toons</a></li>
+                            <li class="SFsubmenuItem"><a href="#" title="home entertaintment">home entertaintment</a></li>
                         </ul>
                     </li>
                     <li class="menuItem SF">
                         <a href="#">technology</a>
                         <ul class="SFsubmenu">
-                            <li class="SFsubmenuItem"><a href="#">Renderman</a></li>
-                            <li class="SFsubmenuItem"><a href="#">graphic technologies</a></li>
+                            <li class="SFsubmenuItem"><a href="#" title="Renderman">Renderman</a></li>
+                            <li class="SFsubmenuItem"><a href="#" title="graphic technologies">graphic technologies</a></li>
                         </ul>
                     </li>
                     <li class="menuItem SF">
                         <a href="#">careers</a>
                         <ul class="SFsubmenu">
-                            <li class="SFsubmenuItem"><a href="#">careers at pixar</a></li>
-                            <li class="SFsubmenuItem"><a href="#">internships</a></li>
-                            <li class="SFsubmenuItem"><a href="#">life at pixar</a></li>
-                            <li class="SFsubmenuItem"><a href="#">events</a></li>
+                            <li class="SFsubmenuItem"><a href="#" title="careers at pixar">careers at pixar</a></li>
+                            <li class="SFsubmenuItem"><a href="#" title="internships">internships</a></li>
+                            <li class="SFsubmenuItem"><a href="#" title="life at pixar">life at pixar</a></li>
+                            <li class="SFsubmenuItem"><a href="#" title="events">events</a></li>
                         </ul>
                     </li>
                     <li class="menuItem SF">
                         <a href="#">extras</a>
                         <ul class="SFsubmenu">
-                            <li class="SFsubmenuItem"><a href="#">pixar in concert</a></li>
-                            <li class="SFsubmenuItem"><a href="#">art exhibition</a></li>
-                            <li class="SFsubmenuItem"><a href="#">pixar in a box</a></li>
-                            <li class="SFsubmenuItem"><a href="#">the science behind pixar</a></li>
+                            <li class="SFsubmenuItem"><a href="#" title="pixar in concert">pixar in concert</a></li>
+                            <li class="SFsubmenuItem"><a href="#" title="art exhibition">art exhibition</a></li>
+                            <li class="SFsubmenuItem"><a href="#" title="pixar in a box">pixar in a box</a></li>
+                            <li class="SFsubmenuItem"><a href="#" title="the science behind pixar">the science behind pixar</a></li>
                         </ul>
                     </li>
                     <li class="menuItem SF">
                         <a href="#">about</a>
                         <ul class="SFsubmenu">
-                            <li class="SFsubmenuItem"><a href="#">contact us</a></li>
-                            <li class="SFsubmenuItem"><a href="#">leadership</a></li>
-                            <li class="SFsubmenuItem"><a href="#">inclusion & outreach</a></li>
-                            <li class="SFsubmenuItem"><a href="#">coming soon</a></li>
-                            <li class="SFsubmenuItem"><a href="#">our story</a></li>
-                            <li class="SFsubmenuItem"><a href="#">company faq's</a></li>
+                            <li class="SFsubmenuItem"><a href="#" title="contact us">contact us</a></li>
+                            <li class="SFsubmenuItem"><a href="#" title="leadership">leadership</a></li>
+                            <li class="SFsubmenuItem"><a href="#" title="inclusion & outreach">inclusion & outreach</a></li>
+                            <li class="SFsubmenuItem"><a href="#" title="coming soon">coming soon</a></li>
+                            <li class="SFsubmenuItem"><a href="#" title="our story">our story</a></li>
+                            <li class="SFsubmenuItem"><a href="#" title="company faq's">company faq's</a></li>
                         </ul>
                     </li>
                 </ul>
             </nav>
-            <i class="fas fa-bars"></i>
+            <i class="fas fa-bars" id="hamburger"></i>
         </div>
     </header>
     <main>
@@ -96,10 +97,10 @@
 
     <footer>
         <ul class="socialMedia">
-            <li class="icon"><i class="fab fa-facebook-f"></i></li>
-            <li class="icon"><i class="fab fa-twitter"></i></li>
-            <li class="icon"><i class="fab fa-instagram"></i></li>
-            <li class="icon"><i class="fab fa-youtube"></i></li>
+            <li class="icon"><a href="_blank" title="facebook"></a><i class="fab fa-facebook-f"></i></li>
+            <li class="icon"><a href="_blank" title="twitter"></a><i class="fab fa-twitter"></i></li>
+            <li class="icon"><a href="_blank" title="instagram"></a><i class="fab fa-instagram"></i></li>
+            <li class="icon"><a href="_blank" title="youtube"></a><i class="fab fa-youtube"></i></li>
         </ul>
         <ul class="links">
             <li class="linkItem"><a href="#">privacy policy</a> | <a href="#">terms of use</a> </li>
