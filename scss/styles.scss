@@ -1,0 +1,6 @@
+@import '_reset';
+*{
+    @include reset;
+}
+@import '_header', '_variables&fxs', '_body','_footer';
+
