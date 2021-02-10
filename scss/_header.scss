@@ -1,0 +1,53 @@
+@import '_var&fxs';
+header{
+    width: 100%;
+    padding: 2em 0;
+    .centered{
+        width: 90%;
+        margin: auto;
+        @include flexPosition(row,nowrap,space-between,center);
+        .logo{
+            max-width: 150px;
+        }
+        nav{
+            width: calc(90% - 150px);
+            .menu{
+                @include flexPosition(row,nowrap,flex-end,center);
+                font-weight: $fontWeight;
+                font-size: $fontSizeMenu;
+            }
+            .menu .menuItem{
+                margin: 0 0 0 1.6em;
+                &:hover{
+                    color: $baseHover;
+                }
+            }
+            .menu .menuItem.SF {
+                &:hover > .SFsubmenu{
+                    display: block;
+                    background-color: $menuBg;
+                    color: $mainBg;
+                }
+            }
+            .menu .SFsubmenu{
+                display: none;
+                position: absolute;
+                margin: 1em 0;
+                padding: 1em 0;
+                text-align: left;
+                font-size: $fontSizeMenu;
+            }
+            .SFsubmenu .SFsubmenuItem{
+                margin: 0.5em 1em;
+                a{
+                    &:hover{
+                        color: $baseHover;
+                    }
+                }
+            }
+        }
+        .fas{
+            display: none;
+        }
+    }
+}

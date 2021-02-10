@@ -6,15 +6,17 @@ $mainBg: white;
 $textSeparation: 5px;
 $textSeparationSmall: 2px;
 $mainFont: 'Open Sans';
-$fontWeight: 800;
+$secondFont: 'sans-serif';
+$fontWeight: 600;
+$fontSizeMenu: 0.95em;
+$fontSizeIcon: 1.5em;
 
 
-
-@mixin flexPosition($direction,$wrapping,$just){
+@mixin flexPosition($direction,$wrapping,$just,$alignItems){
     display: flex;
     flex: $direction $wrapping;
     justify-content: $just;
-    align-items: center;
+    align-items: $alignItems;
     align-content: initial;
 }
 @mixin fixedTop(){

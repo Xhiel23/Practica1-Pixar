@@ -1,0 +1,39 @@
+@import '_var&fxs';
+footer{
+    width: 100%;
+    min-height: 50vh;
+    text-align: center;
+
+    .socialMedia{
+        min-height: 13em;
+        @include flexPosition(row,nowrap,center,center);
+        padding: 1em 1.5em;
+        .icon{
+            font-size: $fontSizeIcon;
+            min-height: 3em;
+            margin: 0 .85em;
+        }
+    }
+    .links{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 1.2em;
+        margin: 0 .8em;
+        padding: 0 0 .2em;
+        font-size: 0.9em;
+        letter-spacing: 3px;
+        .linkItem{
+            padding: 0.5em 0;
+        }
+        a{
+            border-bottom: 1px solid $baseHover;
+            padding-bottom: 2px;
+        }
+    }
+    .copyright{
+        padding: 0.8em 0;
+        font-size: 0.9em;
+    }
+}

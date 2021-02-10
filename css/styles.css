@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box; }
+  * img {
+    width: 100%;
+    display: block;
+    object-fit: cover; }
+  * li {
+    list-style: none; }
+  * a {
+    text-decoration: none;
+    color: inherit; }
+
+header {
+  width: 100%;
+  padding: 2em 0; }
+  header .centered {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: initial; }
+    header .centered .logo {
+      max-width: 150px; }
+    header .centered nav {
+      width: calc(90% - 150px); }
+      header .centered nav .menu {
+        display: flex;
+        flex: row nowrap;
+        justify-content: flex-end;
+        align-items: center;
+        align-content: initial;
+        font-weight: 600;
+        font-size: 0.95em; }
+      header .centered nav .menu .menuItem {
+        margin: 0 0 0 1.6em; }
+        header .centered nav .menu .menuItem:hover {
+          color: #c3c3c3; }
+      header .centered nav .menu .menuItem.SF:hover > .SFsubmenu {
+        display: block;
+        background-color: #1D1D1D;
+        color: white; }
+      header .centered nav .menu .SFsubmenu {
+        display: none;
+        position: absolute;
+        margin: 1em 0;
+        padding: 1em 0;
+        text-align: left;
+        font-size: 0.95em; }
+      header .centered nav .SFsubmenu .SFsubmenuItem {
+        margin: 0.5em 1em; }
+        header .centered nav .SFsubmenu .SFsubmenuItem a:hover {
+          color: #c3c3c3; }
+    header .centered .fas {
+      display: none; }
+
+.soul {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(../images/bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex: row nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: initial; }
+  .soul .logoSoul {
+    width: 90%;
+    max-width: 47.5em;
+    min-height: 3em; }
+
+.columns {
+  width: 100%;
+  padding: 10vh 0; }
+  .columns .items {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: initial; }
+    .columns .items .item {
+      width: calc( 100% / 3 - 2em);
+      text-align: center; }
+      .columns .items .item img {
+        width: 100%;
+        min-height: 200px;
+        margin: 0 0 2em 0; }
+      .columns .items .item .itemTittle {
+        width: 100%;
+        font-weight: 700;
+        font-size: 0.9em; }
+
+footer {
+  width: 100%;
+  min-height: 50vh;
+  text-align: center; }
+  footer .socialMedia {
+    min-height: 13em;
+    display: flex;
+    flex: row nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: initial;
+    padding: 1em 1.5em; }
+    footer .socialMedia .icon {
+      font-size: 1.5em;
+      min-height: 3em;
+      margin: 0 .85em; }
+  footer .links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 1.2em;
+    margin: 0 .8em;
+    padding: 0 0 .2em;
+    font-size: 0.9em;
+    letter-spacing: 3px; }
+    footer .links .linkItem {
+      padding: 0.5em 0; }
+    footer .links a {
+      border-bottom: 1px solid #c3c3c3;
+      padding-bottom: 2px; }
+  footer .copyright {
+    padding: 0.8em 0;
+    font-size: 0.9em; }
+
+html {
+  font-family: "Open Sans", "sans-serif";
+  color: var(--mainColor);
+  text-transform: uppercase;
+  letter-spacing: 2px; }
+/*# sourceMappingURL=styles.css.map */

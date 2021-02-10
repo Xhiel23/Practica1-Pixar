@@ -1,0 +1,42 @@
+@import '_var&fxs';
+.soul{
+    width:100%;
+    min-height: 100vh;
+
+    background-image: url(../images/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    @include flexPosition(row,nowrap,center,center);
+    .logoSoul{
+        width: 90%;
+        max-width: 47.5em;
+        min-height: 3em;
+    }
+}
+
+.columns{
+    width: 100%;
+    padding: 10vh 0;
+    .items{
+        width: 80%;
+        margin: auto;
+        @include flexPosition(row,nowrap,space-between,center);
+        .item{
+            width: calc( 100% / 3 - 2em );
+            text-align: center;
+            img{
+                width: 100%;
+                min-height: 200px;
+                margin: 0 0 2em 0;
+            }
+            .itemTittle{
+                width: 100%;
+                font-weight: 700; 
+                font-size: 0.9em;
+            }
+        }
+    }
+}

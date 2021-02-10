@@ -2,5 +2,11 @@
 *{
     @include reset;
 }
-@import '_header', '_variables&fxs', '_body','_footer';
+@import '_header', '_var&fxs', '_body','_footer';
 
+html{
+    font-family: $mainFont, $secondFont;
+    color: var(--mainColor);
+    text-transform: uppercase;
+    letter-spacing: $textSeparationSmall;
+}
