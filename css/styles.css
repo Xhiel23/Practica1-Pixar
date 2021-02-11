@@ -47,7 +47,21 @@ header {
             color: white; } }
         @media screen and (max-width: 1000px) {
           header .centered nav .menu {
-            display: none; } }
+            opacity: 0; } }
+      header .centered nav .menu.visible {
+        opacity: 1;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 3em 2em;
+        width: 80%;
+        height: 100vh;
+        transition: all 0.5s ease;
+        background-color: white; }
+        @media screen and (prefers-color-scheme: dark) {
+          header .centered nav .menu.visible {
+            background-color: black; } }
       header .centered nav .menu .menuItem {
         margin: 0 0 0 1.6em; }
         header .centered nav .menu .menuItem:hover {
@@ -55,10 +69,18 @@ header {
           @media screen and (prefers-color-scheme: dark) {
             header .centered nav .menu .menuItem:hover {
               color: #c3c3c3; } }
-      header .centered nav .menu .menuItem.SF:hover > .SFsubmenu {
+        @media screen and (max-width: 1000px) {
+          header .centered nav .menu .menuItem {
+            padding: 1em 0;
+            text-transform: capitalize;
+            font-weight: 500; } }
+      header .centered nav .menu .menuItem.SF:hover .SFsubmenu {
         display: block;
         background-color: #1D1D1D;
         color: white; }
+      @media screen and (max-width: 1000px) {
+        header .centered nav .menu .menuItem.SF:hover .SFsubmenu {
+          display: none; } }
       header .centered nav .menu .SFsubmenu {
         display: none;
         position: absolute;

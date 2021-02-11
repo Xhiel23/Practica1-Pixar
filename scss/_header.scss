@@ -26,7 +26,23 @@ header{
                     color: $mainBg;
                 }
                 @include respond(medium){
-                    display: none;
+                    opacity: 0;
+
+                }
+            }
+            .menu.visible{
+                opacity: 1;
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                padding: 3em 2em;
+                width: 80%;
+                height: 100vh;
+                transition: all 0.5s ease;
+                background-color: $mainBg;
+                @include respond(dark){
+                    background-color: $blackBg;
                 }
             }
             .menu .menuItem{
@@ -37,12 +53,26 @@ header{
                         color: $baseHover;
                     }
                 }
+                @include respond(medium){
+                    padding: 1em 0;
+                    text-transform: capitalize;
+                    font-weight: 500;
+                }
             }
             .menu .menuItem.SF {
-                &:hover > .SFsubmenu{
-                    display: block;
-                    background-color: $menuBg;
-                    color: $mainBg;
+                &:hover {
+                    .SFsubmenu{
+                        display: block;
+                        background-color: $menuBg;
+                        color: $mainBg;
+                    }
+                }
+                @include respond(medium){
+                    &:hover {
+                        .SFsubmenu{
+                            display: none;
+                        }
+                    }
                 }
             }
             .menu .SFsubmenu{
