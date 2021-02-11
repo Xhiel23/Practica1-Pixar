@@ -49,11 +49,17 @@ La página creada contiene las siguiente funcionalidades:
 <br />
 * Vista en pantallas de ordenador con modo resposive
 * Vista en pantallas pequeñas
+* Modo nocturno
 
 ### Creado con:
 
 * HTML,CSS
 * [VS Code](https://code.visualstudio.com)
+* [Typescript](https://www.typescriptlang.org)
+* [SASS](https://sass-lang.com)
+* [VS Code](https://code.visualstudio.com)
+* [Gulp](https://gulpjs.com)
+* [Browser Sync](http://www.browsersync.io)
 
 
 
