@@ -53,11 +53,10 @@ La página creada contiene las siguiente funcionalidades:
 
 ### Creado con:
 
-* HTML,CSS
 * [VS Code](https://code.visualstudio.com)
+* HTML,CSS
 * [Typescript](https://www.typescriptlang.org)
 * [SASS](https://sass-lang.com)
-* [VS Code](https://code.visualstudio.com)
 * [Gulp](https://gulpjs.com)
 * [Browser Sync](http://www.browsersync.io)
 
