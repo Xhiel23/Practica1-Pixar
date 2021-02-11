@@ -2,12 +2,18 @@
 header{
     width: 100%;
     padding: 2em 0;
+    @include respond(dark){
+        background-color: $blackBg;
+    }
     .centered{
         width: 90%;
         margin: auto;
         @include flexPosition(row,nowrap,space-between,center);
         .logo{
             max-width: 150px;
+            @include respond(dark){
+                filter: invert(100);
+            }
         }
         nav{
             width: calc(90% - 150px);
@@ -15,11 +21,17 @@ header{
                 @include flexPosition(row,nowrap,flex-end,center);
                 font-weight: $fontWeight;
                 font-size: $fontSizeMenu;
+                @include respond(dark){
+                    color: $mainBg;
+                }
             }
             .menu .menuItem{
                 margin: 0 0 0 1.6em;
                 &:hover{
                     color: $baseHover;
+                    @include respond(dark){
+                        color: $baseHover;
+                    }
                 }
             }
             .menu .menuItem.SF {
@@ -48,6 +60,9 @@ header{
         }
         .fas{
             display: none;
+            @include respond(dark){
+                color: $mainBg;
+            }
         }
     }
 }

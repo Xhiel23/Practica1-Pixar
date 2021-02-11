@@ -1,4 +1,12 @@
 @import '_var&fxs';
+body{
+    @include respond(medium){
+        font-size: 90%;
+    }
+    @include respond(dark){
+        background-color: $menuBg;
+    }
+}
 .soul{
     width:100%;
     min-height: 100vh;
@@ -24,6 +32,9 @@
         width: 80%;
         margin: auto;
         @include flexPosition(row,nowrap,space-between,center);
+        @include respond(dark){
+            color: $mainBg;
+        }
         .item{
             width: calc( 100% / 3 - 2em );
             text-align: center;

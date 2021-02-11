@@ -12,6 +12,13 @@ footer{
             font-size: $fontSizeIcon;
             min-height: 3em;
             margin: 0 .85em;
+            @include respond(dark){
+                color: $baseHover;
+                &:hover{
+                    transform: scale(1.2);
+                    color: $mainBg;
+                }
+            }
         }
     }
     .links{
@@ -30,10 +37,20 @@ footer{
         a{
             border-bottom: 1px solid $baseHover;
             padding-bottom: 2px;
+            @include respond(dark){
+                color: $baseHover;
+                border-color: $darklink;
+                &:hover{
+                    color: $mainBg;
+                }
+            }
         }
     }
     .copyright{
         padding: 0.8em 0;
         font-size: 0.9em;
+        @include respond(dark){
+            color: $baseHover;
+        }
     }
 }

@@ -3,6 +3,9 @@ $baseHover: rgb(195,195,195);
 $menuBg: #1D1D1D;
 $mainBg: white;
 
+$blackBg: black;
+$darklink: rgba(195,195,195,0.4);
+
 $textSeparation: 5px;
 $textSeparationSmall: 2px;
 $mainFont: 'Open Sans';
@@ -35,5 +38,8 @@ $fontSizeIcon: 1.5em;
     }
     @if $breakpoint == small {
         @media screen and (max-width:650px) { @content };
+    }
+    @if $breakpoint == dark {
+        @media screen and (prefers-color-scheme:dark){ @content };
     }
 }

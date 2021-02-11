@@ -16,6 +16,9 @@
 header {
   width: 100%;
   padding: 2em 0; }
+  @media screen and (prefers-color-scheme: dark) {
+    header {
+      background-color: black; } }
   header .centered {
     width: 90%;
     margin: auto;
@@ -26,6 +29,9 @@ header {
     align-content: initial; }
     header .centered .logo {
       max-width: 150px; }
+      @media screen and (prefers-color-scheme: dark) {
+        header .centered .logo {
+          filter: invert(100); } }
     header .centered nav {
       width: calc(90% - 150px); }
       header .centered nav .menu {
@@ -36,10 +42,16 @@ header {
         align-content: initial;
         font-weight: 600;
         font-size: 0.95em; }
+        @media screen and (prefers-color-scheme: dark) {
+          header .centered nav .menu {
+            color: white; } }
       header .centered nav .menu .menuItem {
         margin: 0 0 0 1.6em; }
         header .centered nav .menu .menuItem:hover {
           color: #c3c3c3; }
+          @media screen and (prefers-color-scheme: dark) {
+            header .centered nav .menu .menuItem:hover {
+              color: #c3c3c3; } }
       header .centered nav .menu .menuItem.SF:hover > .SFsubmenu {
         display: block;
         background-color: #1D1D1D;
@@ -57,6 +69,17 @@ header {
           color: #c3c3c3; }
     header .centered .fas {
       display: none; }
+      @media screen and (prefers-color-scheme: dark) {
+        header .centered .fas {
+          color: white; } }
+
+@media screen and (max-width: 1000px) {
+  body {
+    font-size: 90%; } }
+
+@media screen and (prefers-color-scheme: dark) {
+  body {
+    background-color: #1D1D1D; } }
 
 .soul {
   width: 100%;
@@ -87,6 +110,9 @@ header {
     justify-content: space-between;
     align-items: center;
     align-content: initial; }
+    @media screen and (prefers-color-scheme: dark) {
+      .columns .items {
+        color: white; } }
     .columns .items .item {
       width: calc( 100% / 3 - 2em);
       text-align: center; }
@@ -115,6 +141,12 @@ footer {
       font-size: 1.5em;
       min-height: 3em;
       margin: 0 .85em; }
+      @media screen and (prefers-color-scheme: dark) {
+        footer .socialMedia .icon {
+          color: #c3c3c3; }
+          footer .socialMedia .icon:hover {
+            transform: scale(1.2);
+            color: white; } }
   footer .links {
     display: flex;
     flex-direction: column;
@@ -130,9 +162,18 @@ footer {
     footer .links a {
       border-bottom: 1px solid #c3c3c3;
       padding-bottom: 2px; }
+      @media screen and (prefers-color-scheme: dark) {
+        footer .links a {
+          color: #c3c3c3;
+          border-color: rgba(195, 195, 195, 0.4); }
+          footer .links a:hover {
+            color: white; } }
   footer .copyright {
     padding: 0.8em 0;
     font-size: 0.9em; }
+    @media screen and (prefers-color-scheme: dark) {
+      footer .copyright {
+        color: #c3c3c3; } }
 
 html {
   font-family: "Open Sans", "sans-serif";
