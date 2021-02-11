@@ -18,6 +18,10 @@ body{
     background-attachment: fixed;
 
     @include flexPosition(row,nowrap,center,center);
+
+    @include respond(medium){
+        background-attachment: scroll;
+    }
     .logoSoul{
         width: 90%;
         max-width: 47.5em;
@@ -35,13 +39,23 @@ body{
         @include respond(dark){
             color: $mainBg;
         }
+        @include respond(medium){
+            flex-direction: column;
+        }
         .item{
             width: calc( 100% / 3 - 2em );
             text-align: center;
+            @include respond(medium){
+                width: 100%;
+            }
             img{
                 width: 100%;
                 min-height: 200px;
                 margin: 0 0 2em 0;
+                @include respond(medium){
+                    margin: 0;
+                    padding: 2em 1em 2em;
+                }
             }
             .itemTittle{
                 width: 100%;

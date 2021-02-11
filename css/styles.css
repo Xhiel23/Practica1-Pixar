@@ -45,6 +45,9 @@ header {
         @media screen and (prefers-color-scheme: dark) {
           header .centered nav .menu {
             color: white; } }
+        @media screen and (max-width: 1000px) {
+          header .centered nav .menu {
+            display: none; } }
       header .centered nav .menu .menuItem {
         margin: 0 0 0 1.6em; }
         header .centered nav .menu .menuItem:hover {
@@ -72,6 +75,13 @@ header {
       @media screen and (prefers-color-scheme: dark) {
         header .centered .fas {
           color: white; } }
+      @media screen and (max-width: 1000px) {
+        header .centered .fas {
+          display: flex;
+          font-size: 2em;
+          cursor: pointer; }
+          header .centered .fas:hover {
+            color: #c3c3c3; } }
 
 @media screen and (max-width: 1000px) {
   body {
@@ -94,6 +104,9 @@ header {
   justify-content: center;
   align-items: center;
   align-content: initial; }
+  @media screen and (max-width: 1000px) {
+    .soul {
+      background-attachment: scroll; } }
   .soul .logoSoul {
     width: 90%;
     max-width: 47.5em;
@@ -113,13 +126,23 @@ header {
     @media screen and (prefers-color-scheme: dark) {
       .columns .items {
         color: white; } }
+    @media screen and (max-width: 1000px) {
+      .columns .items {
+        flex-direction: column; } }
     .columns .items .item {
       width: calc( 100% / 3 - 2em);
       text-align: center; }
+      @media screen and (max-width: 1000px) {
+        .columns .items .item {
+          width: 100%; } }
       .columns .items .item img {
         width: 100%;
         min-height: 200px;
         margin: 0 0 2em 0; }
+        @media screen and (max-width: 1000px) {
+          .columns .items .item img {
+            margin: 0;
+            padding: 2em 1em 2em; } }
       .columns .items .item .itemTittle {
         width: 100%;
         font-weight: 700;
