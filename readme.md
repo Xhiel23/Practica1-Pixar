@@ -43,7 +43,7 @@
 ## Sobre el proyecto
 
 Primera práctica realizada para el curso de Desarrolladora Web. 
-La práctica consiste en la creación de la página web de [Pixar](https://demo.select-themes.com/stockholm14/).
+La práctica consiste en la creación de la página web de [Pixar](http://www.pixar.com).
 
 La página creada contiene las siguiente funcionalidades:
 <br />
